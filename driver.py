@@ -5,8 +5,12 @@ def main():
   #Load the Iris Dataset:
   X_train, X_test, y_train, y_test = load_iris()
 
+  #Set some hyperparameters:
+  iterations = 1000
+  learning_rate = 0.05
+   
   #Create the model object:
-  model = LogisticRegression(X_train, y_train, iters = 1000, alpha = 0.005)
+  model = LogisticRegression(X_train, y_train, iters = iterations, alpha = learning_rate)
   
   #Train the classifier:
   model.fit(print_cost = True)
