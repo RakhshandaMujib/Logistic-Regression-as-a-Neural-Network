@@ -1,4 +1,4 @@
-from load_iris import *
+from iris import *
 from logistic_regression import *
 
 def main():
