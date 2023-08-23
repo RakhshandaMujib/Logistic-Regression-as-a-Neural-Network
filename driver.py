@@ -1,5 +1,6 @@
 from iris import *
 from logistic_regression import *
+from metrics_bin import model_eval
 
 def main():
   #Load the Iris Dataset:
@@ -19,7 +20,7 @@ def main():
   y_pred = model.predict(X_test)
   
   #Evaluate the classifier:
-  model.model_eval(y_pred, y_test)
+  model_eval(y_pred, y_test)
   model.plot_cost()
 
 if __name__ == '__main__':
