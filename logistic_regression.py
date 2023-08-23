@@ -160,7 +160,7 @@ class LogisticRegression:
         #Compute the gradients:
         dW = (self.X @ (A - self.y).T) / self.m
         db = np.sum(A - self.y) / self.m
-        #Update the wights and bias:
+        #Update the wights and bias - gradient descent:
         self.W -= self.alpha * dW #Weights of the model. Has shape n x 1.
         self.b -= self.alpha * db #Bias of the model. 
         
