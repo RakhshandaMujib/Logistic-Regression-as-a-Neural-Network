@@ -17,4 +17,4 @@ def load_iris():
   X_test = np.array(X_test)
   y_test = np.array(y_test).reshape(y_test.shape[0], 1)
 
-return X_train, X_test, y_train, y_test
+  return X_train, X_test, y_train, y_test
