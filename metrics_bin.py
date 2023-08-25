@@ -56,7 +56,7 @@ def model_eval(A, y):
     print(f"   Accuracy = {acc:.2f}%")
     print(f"   Precision = {precision:.2f}")
     print(f"   Recall (Sensitivity) = {recall:.2f}")
-    print(f"   F1 Score = {f1_score:.2f}")
+    print(f"   F1 Score (micro-avg) = {f1_score:.2f}")
     print(f"   Specificity = {specificity:.2f}")
     print()
     print(f"   True Positives (TP) = {tp}")
